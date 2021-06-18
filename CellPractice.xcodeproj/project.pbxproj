@@ -13,6 +13,7 @@
 		94B57EEA267CE8950000DD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B57EE8267CE8950000DD98 /* Main.storyboard */; };
 		94B57EEC267CE8960000DD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B57EEB267CE8960000DD98 /* Assets.xcassets */; };
 		94B57EEF267CE8960000DD98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B57EED267CE8960000DD98 /* LaunchScreen.storyboard */; };
+		94B57EF9267CEA680000DD98 /* BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B57EF8267CEA680000DD98 /* BViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		94B57EEB267CE8960000DD98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94B57EEE267CE8960000DD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94B57EF0267CE8960000DD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B57EF8267CEA680000DD98 /* BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				94B57EE2267CE8950000DD98 /* AppDelegate.swift */,
 				94B57EE4267CE8950000DD98 /* SceneDelegate.swift */,
 				94B57EE6267CE8950000DD98 /* ViewController.swift */,
+				94B57EF8267CEA680000DD98 /* BViewController.swift */,
 				94B57EE8267CE8950000DD98 /* Main.storyboard */,
 				94B57EEB267CE8960000DD98 /* Assets.xcassets */,
 				94B57EED267CE8960000DD98 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94B57EE7267CE8950000DD98 /* ViewController.swift in Sources */,
+				94B57EF9267CEA680000DD98 /* BViewController.swift in Sources */,
 				94B57EE3267CE8950000DD98 /* AppDelegate.swift in Sources */,
 				94B57EE5267CE8950000DD98 /* SceneDelegate.swift in Sources */,
 			);
