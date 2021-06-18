@@ -9,7 +9,7 @@ import UIKit
 
 class BViewController: UIViewController {
 
-    private lazy var tableView: UITableView = makeTableView()
+    lazy var tableView: UITableView = makeTableView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class BViewController: UIViewController {
 
 extension BViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +43,7 @@ extension BViewController {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
-        tableView.register(ATableViewCell.self, forCellReuseIdentifier: "ATableViewCell")
+        tableView.register(MockCell.self, forCellReuseIdentifier: "ATableViewCell")
         return tableView
     }
 }
