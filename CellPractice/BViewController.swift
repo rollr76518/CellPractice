@@ -24,6 +24,7 @@ class BViewController: UIViewController {
             ]
         )
     }
+    lazy var sourceTableView:UITableView = makeSourceTableView()
 }
 
 extension BViewController: UITableViewDataSource {
@@ -32,7 +33,7 @@ extension BViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ATableViewCell", for: indexPath) as! ATableViewCell
+        let cell = sourceTableView.dequeueReusableCell(withIdentifier: "ATableViewCell", for: indexPath) as! ATableViewCell
         cell.setup(text: "\(indexPath)")
         return cell
     }
@@ -45,5 +46,10 @@ extension BViewController {
         tableView.dataSource = self
         tableView.register(ATableViewCell.self, forCellReuseIdentifier: "ATableViewCell")
         return tableView
+    }
+    func makeSourceTableView() -> UITableView {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ViewController") as! ViewController
+        vc.view.layoutIfNeeded()
+        return vc.tableView
     }
 }
